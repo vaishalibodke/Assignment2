@@ -1,0 +1,81 @@
+***************************************************************** ASSIGNMENT 2 - QUESTION 5 ****************************************************************
+
+Question 5: 
+	- Write a Java program to find the sum of two arrays elements?
+		array1[] = {10, 20, 30, 40, 50};  // Take values form Keyboard
+		array2[] = {9, 18, 27, 36, 45};	 //  Take Values form keyboard
+
+*********************************************************************** SOLUTION ***************************************************************************
+
+package assignment2;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Question5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int arraySize;
+
+		Scanner sc = new Scanner(System.in);
+
+		int[] arrayFirstElement = new int[5];
+		int[] arraySecondElement = new int[5];
+		int[] sumOfTwoArray = new int[5];
+
+		System.out.println("Enter The Size Of Arrays : ");
+		arraySize = sc.nextInt();
+
+		System.out.println("Enter 1st Array Elements : ");
+		for (int i = 0; i < arraySize; i++) {
+			arrayFirstElement[i] = sc.nextInt();
+		}
+		System.out.println("1st Array Elements Are : ");
+		System.out.println(Arrays.toString(arrayFirstElement));
+
+		// System.out.println("Enter The Size Of 2nd Array : ");
+		// arraySize = sc.nextInt();
+
+		System.out.println("Enter 2nd Array Elements : ");
+		for (int i = 0; i < arraySize; i++) {
+			arraySecondElement[i] = sc.nextInt();
+		}
+		System.out.println("2nd Array Elements Are : ");
+		System.out.println(Arrays.toString(arraySecondElement));
+
+		for (int i = 0; i < arraySize; i++) {
+			sumOfTwoArray[i] = arrayFirstElement[i] + arraySecondElement[i];
+		}
+		System.out.println("Addition Of Two Arrays Are : ");
+		System.out.println(Arrays.toString(sumOfTwoArray));
+
+	}
+
+}
+
+********************************************************************* CONSOLE OUTPUT ********************************************************************
+
+Enter The Size Of Arrays : 
+5
+Enter 1st Array Elements : 
+10
+20
+30
+40
+50
+1st Array Elements Are : 
+[10, 20, 30, 40, 50]
+Enter 2nd Array Elements : 
+9
+18
+27
+36
+45
+2nd Array Elements Are : 
+[9, 18, 27, 36, 45]
+Addition Of Two Arrays Are : 
+[19, 38, 57, 76, 95]
+
+**********************************************************************************************************************************************************
